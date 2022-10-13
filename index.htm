@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<head>
+<title>Tytuł strony</title>
+</head>
+<body>
+<center>
+<h1><marquee>Moja strona www </marquee></h1>
+<div id="menu">
+<a href="https://wedkarstwozkapitanem.blogspot.com/"><button title="przejdz do tej strony"> <img width="288" height="288" src="fota.jpg" alt="zdjecie" /> <div> Strona zewnętrzna <div> </button></a>
+<a href="strona1.htm"><button title="przejdz do tej strony"> <img width="288" height="288" src="fota.jpg" alt="zdjecie" /> <div> strona  <span class="nr">&nbsp; 1 </span> <div> </button></a>
+<a href="strona2.htm"><button title="przejdz do tej strony"> <img width="288" height="288" src="fota.jpg" alt="zdjecie" /><div> strona   <span class="nr">&nbsp; 2 </span> <div>  </button></a>
+<a href="strona3.htm"><button title="przejdz do tej strony"> <img width="288" height="288" src="fota.jpg" alt="zdjecie" /> <div> strona  <span class="nr">&nbsp; 3 </span> <div>  </button></a>
+</div>
+<hr>
+</center>
+</body>
+
+</html>
+<style>
+body {
+background: #00abfd linear-gradient(45deg, black, transparent);
+min-height:100vh;
+}
+a {
+margin:10px;
+}
+button {
+cursor:pointer;
+position:relative;
+top:10px;
+border-radius:28px;
+background:blue;
+border:3px dotted green;
+}
+button:hover {
+transform:scale(1.1);
+transform:rotate(12deg);
+}
+img {
+border-radius:28px;
+}
+button div {
+display:none;
+position:absolute;
+margin-top:-108px;
+width:100%;
+height:108px;
+font-size:48px;
+font-family:fantasy;
+background:blue;
+border-radius:28px;
+border:1px solid orange;
+color:green;
+width:96%;
+justify-content:center;
+align-items:center;
+animation:animacja 2s ease-in;
+
+}
+button:hover > div {
+display:flex;
+}
+button:hover {
+z-index:48;
+}
+
+.nr {
+color:orange;
+font-family:fantasy;
+}
+@keyframes animacja {
+0% {
+bottom:-100px;
+opacity:0;
+} 100% {
+bottom:0px;
+opacity:1;
+}
+}
+#menu {
+position:relative;
+animation:menu 4s ease-in;
+}
+@keyframes menu {
+0% {
+bottom:800px;
+} 100% {
+bottom:0px;
+}
+</style>
